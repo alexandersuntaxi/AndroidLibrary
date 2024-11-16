@@ -59,8 +59,13 @@ afterEvaluate {
             }
         }
     }
-}
 
+}
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
 dependencies {
 
     implementation(libs.androidx.core.ktx)
